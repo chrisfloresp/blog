@@ -1,0 +1,20 @@
+<%= form_for(@user) do |u| %>
+
+<div class='field'>
+    <%= u.label :nombre %>
+    <%= u.text_field :nombre %>
+</div>    
+
+<div class='field'>
+    <%= u.label :bio %>
+    <%= u.text_area :bio, :cols => 30, rows: 20 %>
+</div>
+
+<div class='field'>
+    <%= u.label :programa %>
+    <%= u.check_box :programa, checked: "checked" %>
+</div>  
+    
+    
+
+<% end %>
